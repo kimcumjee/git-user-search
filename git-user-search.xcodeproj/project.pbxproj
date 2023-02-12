@@ -13,6 +13,12 @@
 		10556483299948C800DC693C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10556481299948C800DC693C /* Main.storyboard */; };
 		10556485299948C800DC693C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10556484299948C800DC693C /* Assets.xcassets */; };
 		10556488299948C800DC693C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10556486299948C800DC693C /* LaunchScreen.storyboard */; };
+		1055649229994B8900DC693C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1055649129994B8900DC693C /* SnapKit */; };
+		1055649529994B9600DC693C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1055649429994B9600DC693C /* Alamofire */; };
+		1055649829994BB500DC693C /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1055649729994BB500DC693C /* RxSwift */; };
+		1055649B29994BD200DC693C /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 1055649A29994BD200DC693C /* Moya */; };
+		1055649D29994BD200DC693C /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 1055649C29994BD200DC693C /* RxMoya */; };
+		105564A029994BF800DC693C /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 1055649F29994BF800DC693C /* Then */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +37,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1055649D29994BD200DC693C /* RxMoya in Frameworks */,
+				105564A029994BF800DC693C /* Then in Frameworks */,
+				1055649829994BB500DC693C /* RxSwift in Frameworks */,
+				1055649229994B8900DC693C /* SnapKit in Frameworks */,
+				1055649B29994BD200DC693C /* Moya in Frameworks */,
+				1055649529994B9600DC693C /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +54,7 @@
 			children = (
 				1055647A299948C800DC693C /* git-user-search */,
 				10556479299948C800DC693C /* Products */,
+				1055649029994B8900DC693C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +69,30 @@
 		1055647A299948C800DC693C /* git-user-search */ = {
 			isa = PBXGroup;
 			children = (
+				105564A129994CEC00DC693C /* Resources */,
 				1055647B299948C800DC693C /* AppDelegate.swift */,
 				1055647D299948C800DC693C /* SceneDelegate.swift */,
 				1055647F299948C800DC693C /* ViewController.swift */,
 				10556481299948C800DC693C /* Main.storyboard */,
-				10556484299948C800DC693C /* Assets.xcassets */,
 				10556486299948C800DC693C /* LaunchScreen.storyboard */,
-				10556489299948C800DC693C /* Info.plist */,
 			);
 			path = "git-user-search";
+			sourceTree = "<group>";
+		};
+		1055649029994B8900DC693C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		105564A129994CEC00DC693C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				10556484299948C800DC693C /* Assets.xcassets */,
+				10556489299948C800DC693C /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +111,14 @@
 			dependencies = (
 			);
 			name = "git-user-search";
+			packageProductDependencies = (
+				1055649129994B8900DC693C /* SnapKit */,
+				1055649429994B9600DC693C /* Alamofire */,
+				1055649729994BB500DC693C /* RxSwift */,
+				1055649A29994BD200DC693C /* Moya */,
+				1055649C29994BD200DC693C /* RxMoya */,
+				1055649F29994BF800DC693C /* Then */,
+			);
 			productName = "git-user-search";
 			productReference = 10556478299948C800DC693C /* git-user-search.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +147,13 @@
 				Base,
 			);
 			mainGroup = 1055646F299948C700DC693C;
+			packageReferences = (
+				1055648F29994B8300DC693C /* XCRemoteSwiftPackageReference "SnapKit" */,
+				1055649329994B9600DC693C /* XCRemoteSwiftPackageReference "Alamofire" */,
+				1055649629994BAF00DC693C /* XCRemoteSwiftPackageReference "RxSwift" */,
+				1055649929994BD200DC693C /* XCRemoteSwiftPackageReference "Moya" */,
+				1055649E29994BF800DC693C /* XCRemoteSwiftPackageReference "Then" */,
+			);
 			productRefGroup = 10556479299948C800DC693C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -360,6 +403,82 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1055648F29994B8300DC693C /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		1055649329994B9600DC693C /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		1055649629994BAF00DC693C /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		1055649929994BD200DC693C /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		1055649E29994BF800DC693C /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1055649129994B8900DC693C /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1055648F29994B8300DC693C /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		1055649429994B9600DC693C /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1055649329994B9600DC693C /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		1055649729994BB500DC693C /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1055649629994BAF00DC693C /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		1055649A29994BD200DC693C /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1055649929994BD200DC693C /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		1055649C29994BD200DC693C /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1055649929994BD200DC693C /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
+		1055649F29994BF800DC693C /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1055649E29994BF800DC693C /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 10556470299948C700DC693C /* Project object */;
 }
