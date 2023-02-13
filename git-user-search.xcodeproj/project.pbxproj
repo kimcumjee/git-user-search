@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10503377299A683800EB5725 /* GitAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10503376299A683800EB5725 /* GitAPI.swift */; };
+		10503379299A6B3C00EB5725 /* UserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10503378299A6B3C00EB5725 /* UserList.swift */; };
+		1050337B299A6C5E00EB5725 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1050337A299A6C5E00EB5725 /* ViewModel.swift */; };
+		1050337D299A762E00EB5725 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 1050337C299A762E00EB5725 /* RxCocoa */; };
 		1055647C299948C800DC693C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1055647B299948C800DC693C /* AppDelegate.swift */; };
 		1055647E299948C800DC693C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1055647D299948C800DC693C /* SceneDelegate.swift */; };
 		10556480299948C800DC693C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1055647F299948C800DC693C /* ViewController.swift */; };
@@ -22,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10503376299A683800EB5725 /* GitAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitAPI.swift; sourceTree = "<group>"; };
+		10503378299A6B3C00EB5725 /* UserList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserList.swift; sourceTree = "<group>"; };
+		1050337A299A6C5E00EB5725 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		10556478299948C800DC693C /* git-user-search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "git-user-search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1055647B299948C800DC693C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1055647D299948C800DC693C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +47,7 @@
 				1055649D29994BD200DC693C /* RxMoya in Frameworks */,
 				105564A029994BF800DC693C /* Then in Frameworks */,
 				1055649829994BB500DC693C /* RxSwift in Frameworks */,
+				1050337D299A762E00EB5725 /* RxCocoa in Frameworks */,
 				1055649229994B8900DC693C /* SnapKit in Frameworks */,
 				1055649B29994BD200DC693C /* Moya in Frameworks */,
 				1055649529994B9600DC693C /* Alamofire in Frameworks */,
@@ -76,6 +84,9 @@
 				10556489299948C800DC693C /* Info.plist */,
 				10556481299948C800DC693C /* Main.storyboard */,
 				10556486299948C800DC693C /* LaunchScreen.storyboard */,
+				10503376299A683800EB5725 /* GitAPI.swift */,
+				10503378299A6B3C00EB5725 /* UserList.swift */,
+				1050337A299A6C5E00EB5725 /* ViewModel.swift */,
 			);
 			path = "git-user-search";
 			sourceTree = "<group>";
@@ -118,6 +129,7 @@
 				1055649A29994BD200DC693C /* Moya */,
 				1055649C29994BD200DC693C /* RxMoya */,
 				1055649F29994BF800DC693C /* Then */,
+				1050337C299A762E00EB5725 /* RxCocoa */,
 			);
 			productName = "git-user-search";
 			productReference = 10556478299948C800DC693C /* git-user-search.app */;
@@ -181,8 +193,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10503379299A6B3C00EB5725 /* UserList.swift in Sources */,
 				10556480299948C800DC693C /* ViewController.swift in Sources */,
+				10503377299A683800EB5725 /* GitAPI.swift in Sources */,
 				1055647C299948C800DC693C /* AppDelegate.swift in Sources */,
+				1050337B299A6C5E00EB5725 /* ViewModel.swift in Sources */,
 				1055647E299948C800DC693C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,6 +463,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1050337C299A762E00EB5725 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1055649629994BAF00DC693C /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
 		1055649129994B8900DC693C /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 1055648F29994B8300DC693C /* XCRemoteSwiftPackageReference "SnapKit" */;

@@ -7,13 +7,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+final class ViewController: UIViewController {
+    private let viewModel = ViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        viewModel.searchUser(name: "vex") 
     }
-
 
 }
 
