@@ -9,18 +9,24 @@ import Foundation
 import Moya
 import RxSwift
 import RxMoya
+import RxCocoa
 
 final class ViewModel {
+    var disposeBag = DisposeBag()
+        
+    private let isLoading = BehaviorRelay<Bool>(value: true)
     private let provider = MoyaProvider<GitAPI>()
-    func searchUser(name: String) {
+    var observableResult = PublishSubject<UserList>()
+    
+    func searchUser(name: String){
         provider.rx.request(.getUserList(name: name)).subscribe { response in
             switch response {
                     case .success(let result) :
                 guard let data = try? result.map(UserList.self) else { return }
-                        print(data)
+                self.observableResult.onNext(data)
                     case .failure(let err):
                         print(err.localizedDescription)
                 }
-        }
+        }.disposed(by: self.disposeBag)
     }
 }
